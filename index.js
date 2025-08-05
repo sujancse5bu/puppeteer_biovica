@@ -103,7 +103,7 @@ const genReportFromLocalhost = async (qbenchOrderId) => {
 
     // testing end
     console.log("pdfBuffer: ", pdfBuffer);
-    fs.writeFile("from_api.pdf", pdfBuffer, (err) => {
+    fs.writeFile("outputs/from_api.pdf", pdfBuffer, (err) => {
       if (err) throw err;
       console.log("PDF file has been saved.");
     });
